@@ -1,0 +1,100 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333333; /* カーボン色を背景色に設定 */
+    color: white; /* テキスト色を白に */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white; /* 見出しのテキスト色も白に */
+    margin-top: 20px;
+}
+
+.hero {
+    height: 300px;
+    background-color: #333333; /* ヒーローイメージ背景色をカーボン色に */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1.5em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    background: linear-gradient(-45deg, blue, yellow, red);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: Gradient 3s ease infinite;
+}
+
+.biography {
+    border: 2px solid white; /* 白い枠線で囲む */
+    padding: 20px;
+    max-width: 50%;  /* 変更された最大幅 */
+    background-color: #333333; /* バイオグラフィー背景色をカーボン色に */
+    margin: 20px auto;
+    color: white; /* バイオグラフィーのテキスト色を白に */
+}
+
+.biography h3 {
+    font-size: 1.2em;
+    color: white; /* 見出しのテキスト色を白に */
+    margin-bottom: 10px;
+}
+
+.biography ul {
+    list-style: none;
+    padding: 0;
+}
+
+.biography li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #333333; /* フッター背景色をカーボン色に */
+    color: white;
+    padding: 20px;
+}
+
+.home-link {
+    display: block;
+    font-size: 1.8em;
+    color: #007BFF; /* リンクは青色を維持 */
+    text-decoration: none;
+    padding: 10px;
+    border: 3px solid #007BFF; /* リンクの枠も青色 */
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.home-link:hover {
+    background-color: #007BFF;
+    color: white; /* ホバー時のテキスト色を白に */
+}
+
+@keyframes Gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation ease 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
