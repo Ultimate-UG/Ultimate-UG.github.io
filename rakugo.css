@@ -47,17 +47,17 @@ header h1 {
 .home-link {
     display: block;
     font-size: 1.8em;
-    color: #007BFF; /* リンクは青色を維持 */
+    color: #007BFF; 
     text-decoration: none;
     padding: 10px;
-    border: 3px solid #007BFF; /* リンクの枠も青色 */
+    border: 3px solid #007BFF; 
     margin: 20px auto;
     width: fit-content;
 }
 
 .home-link:hover {
     background-color: #007BFF;
-    color: white; /* ホバー時のテキスト色を白に */
+    color: white; 
 }
 .fade-in {
     opacity: 0;

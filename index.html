@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>外薗勇志のポートフォリオ</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>外薗勇志のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="profile.html">プロフィール</a></li>
-            <li><a href="clubs.html">所属サークル・部活</a></li>
-            <li><a href="activities.html">活動報告</a></li>
-        </ul>
-    </nav>
-</header>
-<div class="hero">
-    <h1>外薗勇志</h1>
-</div>
-<section class="activities">
-    <h2>主に活動している部活</h2>
-    <a href="rakugo.html">落語研究会</a> 
-    <a href="icharibachode.html">イチャリバチョーデーズ</a>
-</section>
-<footer>
-    <form action="submit_form.php" method="post">
-        <input type="email" name="email" placeholder="メールアドレス">
-        <input type="text" name="name" placeholder="名前">
-        <textarea name="content" placeholder="内容"></textarea>
-        <button type="submit">送信</button>
-    </form>
-</footer>
-<script src="script.js"></script>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="menu">
+                <li><a href="profile.html" class="slide-in">プロフィール</a></li>
+                <li><a href="clubs.html" class="slide-in">所属サークル・部活</a></li>
+                <li><a href="activities.html" class="slide-in">活動報告</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero slide-in">
+        <h1>外薗勇志</h1>
+    </div>
+    <section class="activities">
+        <h2 class="slide-in">主に活動している部活</h2>
+        <a href="rakugo.html" class="club-link slide-in">落語研究会</a> 
+        <a href="icharibachode.html" class="club-link slide-in">イチャリバチョーデーズ</a>
+    </section>
+    <footer class="slide-in">
+        <form action="submit_form.php" method="post" onsubmit="return confirmSubmission(event)">
+            <input type="email" name="email" placeholder="メールアドレス" required>
+            <input type="text" name="name" placeholder="名前" required>
+            <textarea name="content" placeholder="内容" required></textarea>
+            <button type="submit">送信</button>
+        </form>
+    </footer>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>送信しても大丈夫ですか？</p>
+            <button onclick="submitForm()">はい</button>
+            <button onclick="closePopup()">いいえ</button>
+        </div>
+    </div>
+    <div id="confirmation-popup" class="popup">
+        <div class="popup-content">
+            <p>送信しました。</p>
+            <button onclick="closeConfirmationPopup()">OK</button>
+        </div>
+    </div>
 </body>
 </html>

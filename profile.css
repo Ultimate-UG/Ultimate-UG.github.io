@@ -2,20 +2,20 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #333333; /* カーボン色を背景色に設定 */
-    color: white; /* テキスト色を白に */
+    background-color: #333333; 
+    color: white; 
     text-align: center;
 }
 
 header h1 {
     font-size: 2.5em;
-    color: white; /* 見出しのテキスト色も白に */
+    color: white; 
     margin-top: 20px;
 }
 
 .hero {
     height: 300px;
-    background-color: #333333; /* ヒーローイメージ背景色をカーボン色に */
+    background-color: #333333; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,17 +33,17 @@ header h1 {
 }
 
 .biography {
-    border: 2px solid white; /* 白い枠線で囲む */
+    border: 2px solid white; 
     padding: 20px;
-    max-width: 50%;  /* 変更された最大幅 */
-    background-color: #333333; /* バイオグラフィー背景色をカーボン色に */
+    max-width: 50%;  
+    background-color: #333333; 
     margin: 20px auto;
-    color: white; /* バイオグラフィーのテキスト色を白に */
+    color: white; 
 }
 
 .biography h3 {
     font-size: 1.2em;
-    color: white; /* 見出しのテキスト色を白に */
+    color: white; 
     margin-bottom: 10px;
 }
 
@@ -57,7 +57,7 @@ header h1 {
 }
 
 .footer {
-    background-color: #333333; /* フッター背景色をカーボン色に */
+    background-color: #333333;
     color: white;
     padding: 20px;
 }
@@ -65,17 +65,17 @@ header h1 {
 .home-link {
     display: block;
     font-size: 1.8em;
-    color: #007BFF; /* リンクは青色を維持 */
+    color: #007BFF;
     text-decoration: none;
     padding: 10px;
-    border: 3px solid #007BFF; /* リンクの枠も青色 */
+    border: 3px solid #007BFF;
     margin: 20px auto;
     width: fit-content;
 }
 
 .home-link:hover {
     background-color: #007BFF;
-    color: white; /* ホバー時のテキスト色を白に */
+    color: white; 
 }
 
 @keyframes Gradient {

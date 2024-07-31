@@ -2,8 +2,8 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #333333; /* カーボン色 */
-    color: white; /* テキストを白色に */
+    background-color: #333333; 
+    color: white; 
     text-align: center;
 }
 
@@ -19,46 +19,46 @@ header h1 {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #333333; /* カーボン色 */
+    background-color: #333333;
 }
 
 .social-link {
     font-size: 1.5em;
-    color: white; /* テキストカラーを白に設定 */
-    background-color: #333333; /* カーボン色の背景 */
-    border: 2px solid white; /* 白い枠で囲む */
-    padding: 10px 20px; /* パディングを適切に調整 */
+    color: white; 
+    background-color: #333333; 
+    border: 2px solid white; 
+    padding: 10px 20px; 
     text-decoration: none;
     margin: 10px;
-    transition: background-color 0.3s, color 0.3s; /* 色変更のトランジションを追加 */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .social-link:hover {
-    background-color: #1a1a1a; /* ホバー時には少し暗めのカーボン色に変更 */
-    color: white; /* テキストカラーは白のまま */
+    background-color: #1a1a1a; 
+    color: white; 
 }
 
 
 
 .footer {
     padding: 20px;
-    background-color: #333333; /* フッターもカーボン色に */
+    background-color: #333333;
 }
 
 .home-link {
     display: block;
     font-size: 1.8em;
-    color: #007BFF; /* リンクは青色を維持 */
+    color: #007BFF; 
     text-decoration: none;
     padding: 10px;
-    border: 3px solid #007BFF; /* リンクの枠も青色 */
+    border: 3px solid #007BFF; 
     margin: 20px auto;
     width: fit-content;
 }
 
 .home-link:hover {
     background-color: #007BFF;
-    color: white; /* ホバー時のテキスト色を白に */
+    color: white; 
 }
 
 .fade-in {
