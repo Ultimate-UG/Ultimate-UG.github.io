@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    background: linear-gradient(to right, blue 33%, #DAA520 33%, #DAA520 66%, red 66%);  /* 黄色をダークゴールドに変更 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.clubs-list {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.clubs-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.clubs-list li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.home-link {
+    display: block;
+    font-size: 1.8em;
+    color: #007BFF;
+    text-decoration: none;
+    padding: 10px;
+    border: 3px solid #007BFF;
+    margin: 20px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.home-link:hover {
+    background-color: #007BFF;
+    color: white;
+}
