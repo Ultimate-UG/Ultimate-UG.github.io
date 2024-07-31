@@ -101,6 +101,12 @@ footer form input, footer form textarea, footer form button {
     padding: 10px;
 }
 
+.footer-slide-in {
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+}
+
 .slide-in {
     opacity: 0;
     transform: translateY(-20px);
